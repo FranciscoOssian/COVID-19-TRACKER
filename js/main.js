@@ -1,4 +1,4 @@
-var ul_element = document.getElementById("affected");
+var div_element = document.getElementById("affected");
 
 
 get_countries_names()
@@ -8,11 +8,10 @@ get_countries_names()
 
         for( country_name of list_country_names ){
 
-            var countryLI = document.createElement('li');
-            var textNode = document.createTextNode(country_name);
-            
-            countryLI.appendChild(textNode)
-            ul_element.appendChild(countryLI);
+            var countryLI = document.createElement('div');
+            countryLI.innerHTML += country_name;
+
+            div_element.appendChild(countryLI);
         }
 
     }
