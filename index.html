@@ -55,8 +55,8 @@
 
 
     <script src="./jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="./js/covid_api.js"></script>
-    <script src="./js/main.js"></script>
+
+    
     
 </head>
 <body>
@@ -64,15 +64,17 @@
     <h1>COVID-19 TRACKER</h1>
     <h2>See here the tracking about covid-19/coronavírus in world!</h2>
     <div id="app">
-        <ul id="affected"></ul>
-
         <div id = "map">
-            <div id="map1" style="width: 600px; height: 400px"></div>
+            <div id="map1"></div>
         </div>
+        <h2>list of affected Countries</h2>
+        <ul id="affected"></ul>
 
 
     </div>
 
-  
+    <script src="./js/map.js"></script>
+    <script src="./js/listCountries.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

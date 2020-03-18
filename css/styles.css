@@ -3,18 +3,9 @@ body {
     font-family: 'Baloo Chettan 2', cursive;
     color: aliceblue;
     
-    
 }
 
-#app {
-    display: flex;
-    flex-direction: center;
-}
-
-#affected {
-    flex: 1 1 auto;
-}
-
-#map {
-    flex: 1 1 auto;
+#map1 {
+    width: auto;
+    height: 1000px
 }
