@@ -57,7 +57,10 @@ get_countries()
 
             country_cases_per_one_million_div.setAttribute('class', 'countryCases');
 
+
             //ends class name ------------------------------------------------
+
+
 
             
             // appending informations in card ------------------------------
