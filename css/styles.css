@@ -6,9 +6,10 @@ body {
     
 }
 
+
 #map1 {
     width: auto;
-    height: 1000px
+    height: 500px
 }
 
 #list_affected {
