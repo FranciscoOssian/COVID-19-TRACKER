@@ -24,6 +24,14 @@ body {
     height: 70%;
 
     margin-bottom: 50px;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px black;
 }
 
 
