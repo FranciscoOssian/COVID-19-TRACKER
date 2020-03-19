@@ -5,5 +5,5 @@
 https://franciscoossianfoln.github.io/COVID-19-TRACKER/
 
 ### external services and codes user
-- API : https://coronavirus-19-api.herokuapp.com/all
+- API : [link1](https://coronavirus-19-api.herokuapp.com/all) [link2](https://coronavirus-19-api.herokuapp.com/countries)   
 - jVectorMap GNU AGPL
