@@ -2,6 +2,7 @@ body {
     background-color: black;
     font-family: 'Baloo Chettan 2', cursive;
     color: aliceblue;
+    justify-content: center;
     
 }
 
@@ -12,4 +13,22 @@ body {
 
 #list_affected {
     align-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "texte" "stats";
+
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    color: black;
+    text-align: center;
+
+    width: 25%;
+    height: 70%;
+
+    margin-bottom: 50px;
 }
