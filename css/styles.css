@@ -6,23 +6,6 @@ body {
     
 }
 
-
-#map1 {
-    width: auto;
-    height: 500px
-}
-
-@media only screen and (max-width: 600px) {
-    #map1 {
-        width: auto;
-        height: 250px
-    }
-  }
-
-#list_affected {
-    align-content: center;
-}
-
 .card {
     display: grid;
     grid-template-columns: 100%;
@@ -40,3 +23,25 @@ body {
 
     margin-bottom: 50px;
 }
+
+
+#map1 {
+    width: auto;
+    height: 500px
+}
+
+@media only screen and (max-width: 600px) {
+    #map1 {
+        width: auto;
+        height: 250px
+    }
+    .card{
+        font-size: 20px;
+        width: 50%;
+    }
+  }
+
+#list_affected {
+    align-content: center;
+}
+
