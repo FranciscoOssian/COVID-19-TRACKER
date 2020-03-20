@@ -1,5 +1,11 @@
 var affected_div = document.getElementById("affected");
 
+var list_cards_div = document.getElementsByClassName("card");
+
+var search_button = document.getElementById("button_search_country");
+var search_input = document.getElementById("input_search_country");
+
+
 
 get_countries()
     .then( list_countries => {
@@ -112,3 +118,42 @@ get_countries()
 
     )
     .catch(err => console.log(err));
+
+
+search_input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        search();
+    }
+});
+
+function search (){
+    console.log(`search : ${search_input.value}`);
+    console.log(list_cards_div[0])
+
+    for (card of list_cards_div){
+        var name_card = card.children[0].childNodes[0].data.toUpperCase();
+        var name_search = search_input.value.toUpperCase();
+
+        var find = name_card.indexOf(name_search);
+
+        if (find === -1){
+            card.style.display = 'none';
+
+            card.style.width = "0px";
+            card.style.height = "0px";
+
+            
+
+        }else{
+            card.style.display = 'block';
+
+            card.style.width = "300px";
+            card.style.height = "500px";
+        }
+
+    }
+
+}
+
+search_button.onclick = search;

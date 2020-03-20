@@ -52,10 +52,36 @@ body {
     }
   }
 
-
-
-
 #affected {
     display: flex;
     flex-wrap: wrap;
+}
+
+#h1_search {
+  align-items: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+
+#button_search_country {
+    float: right;
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 100%;
+  }
+
+#button_search_country:hover {
+    background: #ccc;
+}
+
+#input_search_country {
+    margin-left: 20px;
+    padding: 6px;
+    font-size: 30px;
+    border: none;
 }
