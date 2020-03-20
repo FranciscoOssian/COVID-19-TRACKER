@@ -68,7 +68,7 @@ body {
     float: right;
     padding: 6px 10px;
     background: #ddd;
-    font-size: 30px;
+    font-size: 50px;
     border: none;
     cursor: pointer;
 
@@ -81,6 +81,7 @@ body {
 
 #input_search_country {
     margin-left: 20px;
+    margin-top: 15px;
     padding: 6px;
     font-size: 30px;
     border: none;
