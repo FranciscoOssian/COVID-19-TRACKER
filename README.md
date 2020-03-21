@@ -3,6 +3,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This project is a site of peoples can see the covid-19 progress, with data about countries, grafics, news
+See the project page in this link : https://franciscoossianfoln.github.io/COVID-19-TRACKER/
 
 ## Getting Started
 
