@@ -11,8 +11,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 ```
-Acount in Firebase (optional)
-git in your machine
+-Acount in Firebase (optional)
+-git in your machine
 ```
 
 ### Installing
@@ -20,7 +20,7 @@ git in your machine
 Clone this project to your local machine
 
 ```
-git clone *this repo link*
+$ git clone *this repo link*
 ```
 
 ## Firebase configuration
