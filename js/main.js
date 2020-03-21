@@ -7,7 +7,7 @@ var search_input = document.getElementById("input_search_country");
 
 
 
-get_countries()
+get_json("https://coronavirus-19-api.herokuapp.com/countries")
     .then( list_countries => {
 
         console.log(list_countries);

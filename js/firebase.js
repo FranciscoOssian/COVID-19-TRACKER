@@ -1,13 +1,7 @@
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+get_json("https://franciscoossianfoln.github.io/COVID-19-TRACKER/config.json")
+    .then( config => {
+        // Initialize Firebase
+        firebase.initializeApp(config);
+        firebase.analytics();
 
-const URL_TO_FETCH_firebase = 'https://coronavirus-19-api.herokuapp.com/countries';
-
-
-
-function firebase(){
-
-    return fetch(URL_TO_FETCH_firebase).then(r => r.json())
-
-}s
+    } )
