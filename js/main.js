@@ -14,9 +14,10 @@ get_json("https://coronavirus-19-api.herokuapp.com/countries")
 
         for( country of list_countries ){
 
+            var country_card_div = document.createElement('div'); //the card
+
             //inicialization of props cards-----------------------------
 
-            var country_card_div = document.createElement('div'); //the card
             var country_card_stats_div = document.createElement('div') //stats
 
             var country_name_div = document.createElement('h1');
@@ -109,6 +110,23 @@ get_json("https://coronavirus-19-api.herokuapp.com/countries")
             // ends setting -----------------------------------------
 
 
+            //======================================================================
+            let grafic_name = country.country
+
+            console.log(grafic_name)
+
+            function draw_country_in_grafic (){
+
+                draw_chart_country(grafic_name)
+                    console.log(grafic_name)
+                    .then( data => console.log("grafic great", data))
+            }
+
+            country_card_div.onclick = draw_country_in_grafic;
+
+            //========================================================================
+
+
             affected_div.appendChild(country_card_div);
 
 
@@ -157,3 +175,6 @@ function search (){
 }
 
 search_button.onclick = search;
+
+
+
