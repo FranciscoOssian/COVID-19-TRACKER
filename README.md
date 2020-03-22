@@ -38,7 +38,6 @@ Open ```index.html``` in your browser and Have fun!
 ## Built With
 
 * [link1](https://coronavirus-19-api.herokuapp.com/all) [link2](https://coronavirus-19-api.herokuapp.com/countries) - API for covid-19 informations
-* [jVectorMap GNU AGPL](https://jvectormap.com/) - Used to make the world map
 * [Firebase](https://firebase.google.com) - Used to get a information about trafic in this site
 
 ## Author
