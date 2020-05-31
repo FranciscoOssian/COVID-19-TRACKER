@@ -5,17 +5,17 @@
     <title>covid-19 tracker</title>
 
     <!--OG-->
-    <meta property="og:title" content="tracke the covid-19" />
-    <meta property="og:url" content="https://franciscoossianfoln.github.io/COVID-19-TRACKER/" />
+        <meta property="og:title" content="tracke the covid-19" />
+        <meta property="og:url" content="https://franciscoossianfoln.github.io/COVID-19-TRACKER/" />
 
-    <meta property="og:description" content="See here the tracking about covid-19/coronavírus in world!" />
+        <meta property="og:description" content="See here the tracking about covid-19/coronavírus in world!" />
 
-    <meta property="og:site_name" content="COVID-19 TRACKER" />
+        <meta property="og:site_name" content="COVID-19 TRACKER" />
 
-    <meta property="og:image" content="https://franciscoossianfoln.github.io/COVID-19-TRACKER/images/og/embed-view2.jpg" />
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1719" />
-    <meta property="og:image:height" content="967" />
+        <meta property="og:image" content="https://franciscoossianfoln.github.io/COVID-19-TRACKER/images/og/embed-view2.jpg" />
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="1719" />
+        <meta property="og:image:height" content="967" />
     <!--OG/-->
 
     <meta charset="UTF-8">
@@ -26,52 +26,34 @@
 
 </head>
 <body>
-
-    <h1 >COVID-19 TRACKER</h1>
-    <h2 >See here the tracking about covid-19/coronavírus in world!</h2>
-
-    <div id="app">
-
-        <div id="chart_div"></div>
-
-        <div id = "list_affected" align="center">
-
-            <div id = "h1_search" >
-
-                <h1>List of affected Countries.</h1>
-
-                <div class="search-container">
-                    <input type="text" placeholder="Search country.." id = "input_search_country" name="search">
-                    <button type="submit" id = "button_search_country">🔍</button>
+    <div id = "app">
+        <h1 id = "title_site">COVID-19 EVOLUTION</h1>
+        <div>
+            <div class = "grid-container">
+                <div id = "head-list-info" class = "grid-item">LIST OF COUNTRIES</div>
+                <div id = "head-list-info" class = "grid-item">COUNTRY INFO</div>
+                <div id = "body_list" class = "grid-item">
+                    <ul id = "ul_countries">
+                    </ul>
                 </div>
-
+                <div id = "body_info" class = "grid-item">
+                    <div id = "div_name" ></div>
+                    <div id = "div_cases" ></div>
+                    <div id = "div_todayCases" ></div>
+                    <div id = "div_deaths" ></div>
+                    <div id = "div_todayDeaths" ></div>
+                    <div id = "div_recovered" ></div>
+                    <div id = "div_active" ></div>
+                    <div id = "div_critical"></div>
+                    <div id = "div_casesPerOneMillion"></div>
+                    <div id = "div_deathsPerOneMillion"></div>
+                    <div id = "div_totalTests"></div>
+                </div>
             </div>
-
-            <div id="affected"></div>
         </div>
-        
-
-
     </div>
 
     <script src="./js/get_json.js"></script>
-
-    <!----------------------------------------------------ATENTION------------------------------------------------->
-    <!--the project will use firebase for dev constrols, if you clone this project, insert your firebase credentials.
-        if you continue with these credentials, you can overload the server project. -->
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
-    <!--the project will use firebase for dev constrols-->
-
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="./js/chart/get_data_grafic_country.js"></script>
-    <script src="./js/chart/drawChart.js"></script>
-
-    <script src="./js/firebase.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

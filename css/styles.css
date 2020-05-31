@@ -1,78 +1,43 @@
-body {
-    background-color: black;
-    font-family: 'Baloo Chettan 2', cursive;
-    color: aliceblue;
-    justify-content: center;
-    
+#title_site{
+    font-family: 'Roboto', sans-serif;
 }
 
-.card {
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+#ul_countries{
+  list-style-type: none;
+}
+
+.li_country{
+  background-color: #17198A;
+  border-radius: 5%;
+}
+.li_country:hover {
+  background-color: #171fff;
+}
+
+#body_info{
+  background-color: #17198A;
+}
+
+#head-list-info{
+  background-color: #2225C9;
+}
+#head-list-info {
+  background-color: #2225C9;
+}
+
+
+.grid-container {
     display: grid;
-
-    grid-template-rows: 210px 210px 80px;
-    grid-template-columns: 100%;
-    grid-template-areas: "country" "stats";
-
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    
-    width: 300px;
-    height: auto;
-    font-size: 20px;
-
-    border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    color: black;
-    text-align: center;
-
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: scale(1.2);
-    box-shadow: 5px 5px 15px black;
-}
-
-@media only screen and (max-width: 600px) {
-    .card{
-        width: 50%;
-    }
+    grid-template-columns: auto auto;
+    padding: 10px;
   }
-
-#affected {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#h1_search {
-  align-items: center;
-  display: flex;
-  margin-bottom: 50px;
-}
-
-
-#button_search_country {
-    float: right;
-    padding: 6px 10px;
-    background: #ddd;
-    font-size: 50px;
-    border: none;
-    cursor: pointer;
-
-    border-radius: 100%;
-  }
-
-#button_search_country:hover {
-    background: #ccc;
-}
-
-#input_search_country {
-    margin-left: 20px;
-    margin-top: 15px;
-    padding: 6px;
+  .grid-item {
+    color: aliceblue;
+    padding: 20px;
     font-size: 30px;
-    border: none;
-}
+    text-align: center;
+  }
